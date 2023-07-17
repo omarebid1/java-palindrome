@@ -9,11 +9,13 @@ public class Main {
         System.out.println("inserisci una parola");
         String word = scan.nextLine();
 
-       // StringBuilder revWord = new StringBuilder(word);
+        StringBuilder rev = new StringBuilder(word);
 
-        String revWord;
+        rev.reverse();
 
-        /*if (word.equals(revWord)){
+        String revWord = rev.toString();
+
+        if (word.equals(revWord)){
             System.out.println("è una parola palindrome");
 
         }
@@ -21,10 +23,5 @@ public class Main {
         else {
             System.out.println("non è una parola palindrome");
         }
-
-         */
-
-
-
     }
 }
